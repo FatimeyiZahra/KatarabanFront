@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+  outline: none;
+  text-decoration: none;
+  color: #232323;
+}
+
+a,
+.btn,
+button {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  outline: medium none;
+}
+
+p {
+  color: #666666;
+  line-height: 28px;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.m-l-4 {
+  margin-left: 4px;
+}
+
+canvas {
+  position: absolute;
+}
+
+#about {
+  position: relative;
+  top: 95px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#about .wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#about .wrapper .static-txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+#about .wrapper .dinamic-txts {
+  margin-left: 15px;
+  font-weight: 600;
+  height: 90px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+#about .wrapper .dinamic-txts li {
+  font-size: 60px;
+  color: #00ff00;
+  -webkit-animation: slide 6s steps(4) infinite;
+          animation: slide 6s steps(4) infinite;
+  position: relative;
+  top: 0;
+}
+
+#about .wrapper .dinamic-txts li span {
+  position: relative;
+  z-index: 4;
+}
+
+#about .wrapper .dinamic-txts li span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid green;
+  left: 0;
+  -webkit-animation: typing 1.5s steps(10) infinite;
+          animation: typing 1.5s steps(10) infinite;
+  background: #040404;
+}
+
+@-webkit-keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@-webkit-keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
