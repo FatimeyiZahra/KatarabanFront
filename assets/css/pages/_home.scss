@@ -1,19 +1,74 @@
 canvas {
     position: absolute;
 }
+.ag-thunders {
+    background: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/animation-thunders/images/thunders.png)
+        no-repeat scroll 50% 0;
+
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    -webkit-animation: an-thunders 2s infinite alternate;
+    -moz-animation: an-thunders 2s infinite alternate;
+    -o-animation: an-thunders 2s infinite alternate;
+    animation: an-thunders 2s infinite alternate;
+}
 #about {
     position: relative;
-    top: 95px;
-    left: 0;
+    top: 50px;
+    left: -33px;
     width: 100%;
     height: 100%;
     .wrapper {
         display: inline-flex;
+        background: $backgroundDark;
+        padding: 75px 33px;
+        .tags {
+            bottom: auto;
+            top: 6px;
+            color: $tagColor;
+            position: absolute;
+            // bottom: 0;
+            left: 2rem;
+            font-style: italic;
+            font-size: 1.8rem;
+            font-family: "La Belle Aurore", cursive;
+            &::after {
+                content: "<main>";
+                font-family: "La Belle Aurore", cursive;
+                color: $tagColor;
+                font-size: 1.8rem;
+                position: absolute;
+                margin-left: 2rem;
+            }
+        }
         .static-txt {
-            font-family: $primary_font_family;
+            // font-family: $primary_font_family;
             font-weight: 400;
             color: $whiteColor;
             font-size: 60px;
+            &::before {
+                content: "<h2>";
+                font-family: $laBelleFont;
+                color: $tagColor;
+                font-size: 18px;
+                position: absolute;
+                margin-top: 3px;
+                left: 31px;
+            }
+            &::after {
+                content: "<!-- <h3> Sharifova Sahara </h3> -->";
+                font-family: "La Belle Aurore", cursive;
+                color: $grayColor;
+                font-size: 1.8rem;
+                position: absolute;
+                bottom: 48px;
+                left: 70px;
+            }
         }
         .dinamic-txts {
             margin-left: 15px;
@@ -21,13 +76,21 @@ canvas {
             height: 90px;
             overflow: hidden;
             z-index: 4;
+            &::before {
+                content: "</h2>";
+                font-family: $laBelleFont;
+                color: $tagColor;
+                font-size: 18px;
+                position: absolute;
+                margin-top: 77px;
+                right: 65px;
+            }
             li {
                 font-size: 60px;
                 color: #00ff00;
                 animation: slide 6s steps(4) infinite;
                 position: relative;
                 top: 0;
-
                 span {
                     position: relative;
                     z-index: 4;
@@ -36,25 +99,13 @@ canvas {
                         position: absolute;
                         width: 100%;
                         height: 100%;
-                        border-left: 2px solid green;
+                        border-left: 2px solid white;
                         left: 0;
-                        animation: typing 1.5s steps(10) infinite;
-                        background: #040404;
+                        animation: typing 1.5s steps(11) infinite;
+                        background: $backgroundDark;
                     }
                 }
             }
         }
-    }
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
-@keyframes slide {
-    100% {
-        top: -360px;
     }
 }

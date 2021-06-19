@@ -1,3 +1,87 @@
+@-webkit-keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@-webkit-keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+@-webkit-keyframes an-thunders {
+  0%,
+  19%,
+  21%,
+  39%,
+  41%,
+  59%,
+  61%,
+  79%,
+  81% {
+    opacity: 0;
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 1;
+  }
+  39%,
+  41% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@keyframes an-thunders {
+  0%,
+  19%,
+  21%,
+  39%,
+  41%,
+  59%,
+  61%,
+  79%,
+  81% {
+    opacity: 0;
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 1;
+  }
+  39%,
+  41% {
+    -webkit-transform: none;
+    transform: none;
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -47,10 +131,22 @@ canvas {
   position: absolute;
 }
 
+.ag-thunders {
+  background: url(https://rawcdn.githack.com/SochavaAG/example-mycode/master/pens/animation-thunders/images/thunders.png) no-repeat scroll 50% 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: an-thunders 2s infinite alternate;
+  animation: an-thunders 2s infinite alternate;
+}
+
 #about {
   position: relative;
-  top: 95px;
-  left: 0;
+  top: 50px;
+  left: -33px;
   width: 100%;
   height: 100%;
 }
@@ -59,13 +155,54 @@ canvas {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  background: #1d1d1d;
+  padding: 75px 33px;
+}
+
+#about .wrapper .tags {
+  bottom: auto;
+  top: 6px;
+  color: #1968c0;
+  position: absolute;
+  left: 2rem;
+  font-style: italic;
+  font-size: 1.8rem;
+  font-family: "La Belle Aurore", cursive;
+}
+
+#about .wrapper .tags::after {
+  content: "<main>";
+  font-family: "La Belle Aurore", cursive;
+  color: #1968c0;
+  font-size: 1.8rem;
+  position: absolute;
+  margin-left: 2rem;
 }
 
 #about .wrapper .static-txt {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 60px;
+}
+
+#about .wrapper .static-txt::before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
+  color: #1968c0;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 3px;
+  left: 31px;
+}
+
+#about .wrapper .static-txt::after {
+  content: "<!-- <h3> Sharifova Sahara </h3> -->";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: 48px;
+  left: 70px;
 }
 
 #about .wrapper .dinamic-txts {
@@ -74,6 +211,16 @@ canvas {
   height: 90px;
   overflow: hidden;
   z-index: 4;
+}
+
+#about .wrapper .dinamic-txts::before {
+  content: "</h2>";
+  font-family: "La Belle Aurore", cursive;
+  color: #1968c0;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 77px;
+  right: 65px;
 }
 
 #about .wrapper .dinamic-txts li {
@@ -95,36 +242,10 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-left: 2px solid green;
+  border-left: 2px solid white;
   left: 0;
-  -webkit-animation: typing 1.5s steps(10) infinite;
-          animation: typing 1.5s steps(10) infinite;
-  background: #040404;
-}
-
-@-webkit-keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}
-
-@keyframes typing {
-  100% {
-    left: 100%;
-    margin: 0 -35px 0 35px;
-  }
-}
-
-@-webkit-keyframes slide {
-  100% {
-    top: -360px;
-  }
-}
-
-@keyframes slide {
-  100% {
-    top: -360px;
-  }
+  -webkit-animation: typing 1.5s steps(11) infinite;
+          animation: typing 1.5s steps(11) infinite;
+  background: #1d1d1d;
 }
 /*# sourceMappingURL=style.css.map */
