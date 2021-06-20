@@ -91,6 +91,34 @@
   line-height: 1.5;
 }
 
+.white-code {
+  color: #f0f0f0;
+}
+
+.lightBrown-code {
+  color: #af715a;
+}
+
+.blue-code {
+  color: #8cdaff;
+}
+
+.green-code {
+  color: #4ecab1;
+}
+
+.purple-code {
+  color: #e499ea;
+}
+
+.yellow-code {
+  color: #cdd1a2;
+}
+
+.darkBlue-code {
+  color: #478dc6;
+}
+
 li {
   list-style: none;
 }
@@ -121,6 +149,14 @@ p {
   margin: 0 0 15px;
   text-transform: none;
   font-weight: 400;
+}
+
+.p-b-35 {
+  padding-bottom: 35px;
+}
+
+.p-l-2 {
+  padding-left: 2px;
 }
 
 .m-l-4 {
@@ -156,7 +192,7 @@ canvas {
   display: -ms-inline-flexbox;
   display: inline-flex;
   background: #1d1d1d;
-  padding: 75px 33px;
+  padding: 89px 56px;
 }
 
 #about .wrapper .tags {
@@ -190,9 +226,10 @@ canvas {
   font-family: "La Belle Aurore", cursive;
   color: #1968c0;
   font-size: 18px;
+  font-weight: 600;
   position: absolute;
-  margin-top: 3px;
-  left: 31px;
+  margin-top: -4px;
+  left: 52px;
 }
 
 #about .wrapper .static-txt::after {
@@ -201,7 +238,7 @@ canvas {
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
-  bottom: 48px;
+  top: 36%;
   left: 70px;
 }
 
@@ -247,5 +284,52 @@ canvas {
   -webkit-animation: typing 1.5s steps(11) infinite;
           animation: typing 1.5s steps(11) infinite;
   background: #1d1d1d;
+}
+
+#about .contact-info {
+  background: #1d1d1d;
+  padding-left: 45px;
+  margin-top: 16px;
+  padding-top: 28px;
+}
+
+#about .contact-info .email-tel {
+  position: relative;
+}
+
+#about .contact-info .email-tel .code-item {
+  padding-left: 18px;
+}
+
+#about .contact-info .email-tel .code-item .dashed::before {
+  content: "";
+  border-left: 1px dashed #888484;
+  top: 96px;
+  height: 20%;
+  left: 22px;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  width: 1px;
+  z-index: 1;
+  margin-left: -1px;
+}
+
+#about .contact-info .email-tel .code-item-info {
+  padding-left: 48px;
+}
+
+#about .contact-info .email-tel .dashed::before {
+  content: "";
+  border-left: 1px dashed #888484;
+  top: 49px;
+  height: 58%;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  width: 1px;
+  z-index: 1;
+  margin-left: -1px;
 }
 /*# sourceMappingURL=style.css.map */

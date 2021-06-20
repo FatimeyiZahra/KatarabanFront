@@ -26,7 +26,7 @@ canvas {
     .wrapper {
         display: inline-flex;
         background: $backgroundDark;
-        padding: 75px 33px;
+        padding: 89px 56px;
         .tags {
             bottom: auto;
             top: 6px;
@@ -56,9 +56,10 @@ canvas {
                 font-family: $laBelleFont;
                 color: $tagColor;
                 font-size: 18px;
+                font-weight: 600;
                 position: absolute;
-                margin-top: 3px;
-                left: 31px;
+                margin-top: -4px;
+                left: 52px;
             }
             &::after {
                 content: "<!-- <h3> Sharifova Sahara </h3> -->";
@@ -66,7 +67,8 @@ canvas {
                 color: $grayColor;
                 font-size: 1.8rem;
                 position: absolute;
-                bottom: 48px;
+                top: 36%;
+                // bottom: 48px;
                 left: 70px;
             }
         }
@@ -104,6 +106,51 @@ canvas {
                         animation: typing 1.5s steps(11) infinite;
                         background: $backgroundDark;
                     }
+                }
+            }
+        }
+    }
+    .contact-info {
+        background: $backgroundDark;
+        padding-left: 45px;
+        margin-top: 16px;
+        padding-top: 28px;
+        .email-tel {
+            position: relative;
+            .code-item {
+                padding-left: 18px;
+                .dashed {
+                    &::before {
+                        content: "";
+                        border-left: 1px dashed #888484;
+                        top: 96px;
+                        height: 20%;
+                        left: 22px;
+                        position: absolute;
+                        -webkit-transition: all 0.35s ease-in-out;
+                        transition: all 0.35s ease-in-out;
+                        width: 1px;
+                        z-index: 1;
+                        margin-left: -1px;
+                    }
+                }
+            }
+            .code-item-info {
+                padding-left: 48px;
+            }
+            .dashed {
+                &::before {
+                    content: "";
+                    border-left: 1px dashed #888484;
+                    top: 49px;
+                    height: 58%;
+                    left: 4px;
+                    position: absolute;
+                    -webkit-transition: all 0.35s ease-in-out;
+                    transition: all 0.35s ease-in-out;
+                    width: 1px;
+                    z-index: 1;
+                    margin-left: -1px;
                 }
             }
         }

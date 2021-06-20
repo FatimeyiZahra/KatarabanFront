@@ -5,8 +5,27 @@
     font-size: 100%;
     line-height: 1.5;
   }
-
-
+.white-code{
+  color: #f0f0f0;
+}
+.lightBrown-code{
+  color: #af715a;
+}
+.blue-code{
+  color: #8cdaff;
+}
+.green-code{
+  color: #4ecab1;
+}
+.purple-code{
+  color: #e499ea;
+}
+.yellow-code{
+  color: #cdd1a2;
+}
+.darkBlue-code{
+  color: #478dc6;
+}
   li {
     list-style: none;
   }
@@ -34,6 +53,12 @@
     margin: 0 0 15px;
     text-transform: none;
     font-weight: 400;
+  }
+  .p-b-35{
+    padding-bottom: 35px;
+  }
+  .p-l-2{
+    padding-left: 2px;
   }
   .m-l-4{
     margin-left: 4px;
