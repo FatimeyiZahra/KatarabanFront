@@ -49,7 +49,7 @@ canvas {
         .static-txt {
             // font-family: $primary_font_family;
             font-weight: 400;
-            color: $whiteColor;
+            color: $borderColor;
             font-size: 60px;
             &::before {
                 content: "<h2>";
@@ -151,6 +151,96 @@ canvas {
                     width: 1px;
                     z-index: 1;
                     margin-left: -1px;
+                }
+            }
+        }
+    }
+    .player-container {
+        // z-index: 99;
+        height: 400px;
+        width: 300px;
+        background: #181818;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+        .img-container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: -50px;
+            left: 50px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.6);
+            }
+        }
+        h2 {
+            font-size: 25px;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+        }
+
+        h3 {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+            margin: 5px 0 0;
+            color: #b3b3b3;
+        }
+        /* Progress */
+        .progress-container {
+            background: #535353;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 40px 20px;
+            height: 4px;
+            width: 90%;
+            .progress {
+                background: #b3b3b3;
+                border-radius: 5px;
+                height: 100%;
+                width: 0%;
+                transition: width 0.1s linear;
+            }
+            .duration-wrapper {
+                position: relative;
+                top: -28px;
+                display: flex;
+                justify-content: space-between;
+                color: rgb(179, 179, 179);
+            }
+        }
+        /* Controls */
+        .player-controls {
+            position: relative;
+            top: -15px;
+            left: 76px;
+            width: 200px;
+            z-index: 5;
+            .fas {
+                font-size: 30px;
+                color: #b3b3b3;
+                margin-right: 30px;
+                cursor: pointer;
+                user-select: none;
+                &.fa-play {
+                    color: #fff;
+                }
+                &.fa-pause {
+                    color: #fff;
+                }
+
+                &:hover {
+                    // filter: brightness(80%);
+                    color: #fff;
+                }
+                .main-button {
+                    font-size: 40px;
+                    position: relative;
+                    top: 3px;
                 }
             }
         }
