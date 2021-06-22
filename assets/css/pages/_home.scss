@@ -27,7 +27,7 @@ canvas {
         display: inline-flex;
         background: $backgroundDark;
         padding: 89px 56px;
-        .tags {
+        .tags { //body tag
             bottom: auto;
             top: 6px;
             color: $tagColor;
@@ -46,6 +46,7 @@ canvas {
                 margin-left: 2rem;
             }
         }
+        //hello im
         .static-txt {
             // font-family: $primary_font_family;
             font-weight: 400;
@@ -72,6 +73,7 @@ canvas {
                 left: 70px;
             }
         }
+        //work status
         .dinamic-txts {
             margin-left: 15px;
             font-weight: 600;
