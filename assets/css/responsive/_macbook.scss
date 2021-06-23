@@ -1,0 +1,89 @@
+
+
+/* Responsive */
+@media (max-width: 1500px) {
+    html {
+      font-size: 45%;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    html {
+      font-size: 40%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .section-3-content {
+      width: 90%;
+    }
+  
+    .loading-wrapper {
+      width: 70%;
+    }
+  
+    .loading i {
+      font-size: 6rem;
+    }
+  
+  }
+  
+  @media (max-width: 700px) {
+    .logo {
+      top: 0;
+      left: 2rem;
+    }
+  
+    .logo i {
+      font-size: 8rem;
+    }
+  
+  }
+  
+  @media (max-width: 550px) {
+    .section-3-heading {
+      font-size: 8rem;
+    }
+  
+    .macbook-info-heading {
+      font-size: 5rem;
+    }
+  
+    .macbook-btn {
+      width: 15rem;
+      height: 3rem;
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 35%;
+    }
+  
+    .logo {
+      top: 10rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .section-3-heading {
+      font-size: 6rem;
+    }
+  
+    .macbook-info {
+      width: 40rem;
+    }
+  
+    .macbook-info-heading {
+      font-size: 3rem;
+    }
+  
+    .macbook-price {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  
+  }
+  /* End of Responsive */
+  

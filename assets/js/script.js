@@ -1,3 +1,11 @@
+const section3Content = document.querySelector('.section-3-content')
+
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset + window.innerHeight >= section3Content.offsetTop + section3Content.offsetHeight / 2) {
+        section3Content.classList.add('change')
+    }
+})
+
 function rain(canvas, text, symbol, speed) {
     var d = document.documentElement;
     var clinetW = d.clientWidth;
@@ -61,3 +69,4 @@ var swiper = new Swiper('.swiper-container', {
     slideShadows: true,
   }
 });
+

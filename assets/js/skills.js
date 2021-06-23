@@ -90,6 +90,8 @@ var entries2 = [
     { image: './assets/img/node-js.png', width: '50', height: '50', target: '_top', tooltip: 'NodeJs' },
     { image: './assets/img/react.png', width: '50', height: '50', target: '_top', tooltip: 'React' },
     { image: './assets/img/typescript.png', width: '50', height: '50',  target: '_top', tooltip: 'TypeCript' },
+    { image: './assets/img/wpf.png', width: '50', height: '50',  target: '_top', tooltip: 'WPF' },
+
     
 ];
 
