@@ -37,13 +37,13 @@ canvas {
             // bottom: 0;
             left: 2rem;
             font-style: italic;
-            font-size: 1.8rem;
+            font-size: 28.8px;
             font-family: "La Belle Aurore", cursive;
             &::after {
                 content: "<main>";
                 font-family: "La Belle Aurore", cursive;
                 color: $tagColor;
-                font-size: 1.8rem;
+                font-size: 28.8px;
                 position: absolute;
                 margin-left: 2rem;
             }
@@ -121,6 +121,7 @@ canvas {
         padding-top: 28px;
         .email-tel {
             position: relative;
+            font-size: 16px;
             .code-item {
                 padding-left: 18px;
                 .dashed {
@@ -279,14 +280,14 @@ canvas {
             // bottom: 0;
             left: 2rem;
             font-style: italic;
-            font-size: 1.8rem;
+            font-size: 28.8px;
             font-family: "La Belle Aurore", cursive;
             &::after {
                 margin-top: 32px;
                 content: "<p>";
                 font-family: "La Belle Aurore", cursive;
                 color: #1968c0;
-                font-size: 1.8rem;
+                font-size: 28.8px;
                 position: absolute;
                 margin-left: 3rem;
             }
@@ -322,9 +323,19 @@ canvas {
             }
         }
     }
+    .change{
+        font-size: 20px;
+        color: $whiteColor;
+    }
     #holder {
         padding-left: 5%;
-        a{
+        a {
+            font-size: 15px;
+        }
+    }
+    #holder2 {
+        padding-left: 5%;
+        a {
             font-size: 15px;
         }
     }
@@ -339,11 +350,24 @@ canvas {
     align-items: center;
     padding-left: 10rem;
     // font-size: 45%;
+    .section-heading {
+        font-size: 10rem;
+        font-family: $oswaldFontFamily;
+        font-weight: 300;
+        color: #ddd;
+        margin-right: 4rem;
+    }
+    .section-heading-line {
+        width: 15rem;
+        height: 0.2rem;
+        background-color: #ddd;
+    }
     .pricing-cards-wrapper {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         padding: 5rem;
+
         .pricing-card {
             width: 28rem !important;
             height: 45rem !important;

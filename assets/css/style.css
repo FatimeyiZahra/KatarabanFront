@@ -219,7 +219,7 @@ canvas {
   position: absolute;
   left: 2rem;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   font-family: "La Belle Aurore", cursive;
 }
 
@@ -227,7 +227,7 @@ canvas {
   content: "<main>";
   font-family: "La Belle Aurore", cursive;
   color: #1968c0;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   position: absolute;
   margin-left: 2rem;
 }
@@ -312,6 +312,7 @@ canvas {
 
 #about .contact-info .email-tel {
   position: relative;
+  font-size: 16px;
 }
 
 #about .contact-info .email-tel .code-item {
@@ -490,7 +491,7 @@ canvas {
   position: absolute;
   left: 2rem;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   font-family: "La Belle Aurore", cursive;
 }
 
@@ -499,7 +500,7 @@ canvas {
   content: "<p>";
   font-family: "La Belle Aurore", cursive;
   color: #1968c0;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   position: absolute;
   margin-left: 3rem;
 }
@@ -537,6 +538,11 @@ canvas {
   margin-left: -1px;
 }
 
+#skills .change {
+  font-size: 20px;
+  color: #ffffff;
+}
+
 #skills #holder {
   padding-left: 5%;
 }
@@ -557,6 +563,20 @@ canvas {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 10rem;
+}
+
+#pricing .section-heading {
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #ddd;
+  margin-right: 4rem;
+}
+
+#pricing .section-heading-line {
+  width: 15rem;
+  height: 0.2rem;
+  background-color: #ddd;
 }
 
 #pricing .pricing-cards-wrapper {
@@ -773,12 +793,6 @@ canvas {
     width: 85rem;
     right: 5rem;
     bottom: 10rem;
-  }
-}
-
-@media (max-width: 1500px) {
-  .section-heading-line {
-    display: none;
   }
 }
 
