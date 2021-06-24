@@ -52,10 +52,9 @@
 .loading-wrapper {
     position: absolute;
     top: 5%;
-    width: 60%;
+    width: 62%;
     height: 85%;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-        url(/assets/img/macbook-1-desktop.png) center no-repeat;
+    background: url(/assets/img/safari1.jpg) center no-repeat;
     z-index: -1;
     opacity: 0;
 }
@@ -113,9 +112,41 @@
 /* Section 3 Info */
 .macbook-info {
     position: absolute;
-    width: 70rem;
-    text-align: center;
+    background: white;
     opacity: 0;
+    width: 29rem;
+    left: 35%;
+    text-align: center;
+    input {
+        height: 34px;
+        border-radius: 25px;
+        padding: 0 25px 0 24px;
+    }
+    textarea{
+        min-height: 42px;
+        border-radius: 22px;
+        padding: 10px 23px;
+    }
+    button{
+        width: 100%;
+        height: 40px;
+        border-radius: 25px;
+        background: #846add;
+        font-family: Montserrat-Bold;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #fff;
+    }
+    .contact{
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 10px;
+    }
 }
 
 .change .macbook-info {
