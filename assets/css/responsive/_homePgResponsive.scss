@@ -21,7 +21,6 @@
   //   font-size: 45%;
   // }
 
-  
   // #pricing {
   //   flex-direction: column;
   // }
@@ -58,9 +57,105 @@
   html {
     font-size: 30%;
   }
+  canvas {
+    height: 1067px;
+    width: 100%;
+  }
+  .ag-thunders {
+    top: 70px;
+    left: -132%;
+  }
+  #about {
+    left: 3px;
+    .wrapper {
+      padding: 55px 57px;
+      .tags {
+        top: 5px;
+        left: 4rem;
+        font-size: 28.8px;
+        &::after {
+          font-size: 28.8px;
+          margin-left: 2rem;
+          margin-top: -6px;
+        }
+      }
+      .static-txt {
+        font-size: 23px;
+        margin-top: 43px;
+        &::before {
+          font-size: 18px;
+          margin-top: -17px;
+          left: 52px;
+        }
+        &::after {
+          font-size: 17px;
+          top: 33%;
+          left: 61px;
+        }
+      }
+      .dinamic-txts {
+        margin-left: 15px;
+        padding-top: 42px;
+        &::before {
+          font-size: 18px;
+          margin-top: 30px;
+          right: 36px;
+        }
+        li {
+          font-size: 23px;
+        }
+      }
+    }
+    .player-container {
+      margin-left: 43px;
+    }
+  }
+
+  #skills {
+    .short-info {
+      ul {
+        padding-bottom: 10px;
+        li {
+          padding-top: 30px;
+          font-size: 26px;
+        }
+      }
+      .tags {
+        &::after {
+          margin-left: 5rem;
+        }
+      }
+      p {
+        padding-right: 0;
+        &::before {
+          margin-top: 82%;
+          margin-left: -64px;
+        }
+        &::after {
+          top: 21%;
+          height: 62%;
+          left: 8%;
+        }
+      }
+    }
+    #holder {
+      padding-left: 0;
+      svg {
+        width: 100%;
+      }
+    }
+    #holder2 {
+      padding-left: 0;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+  #pricing {
+    flex-direction: column;
+    .section-heading-line {
+      display: none;
+    }
+    
+  }
 }
-/* End of Responsive */
-
-
-//-------------------------------------------------------------------------------------
-

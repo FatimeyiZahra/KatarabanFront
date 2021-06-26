@@ -201,7 +201,6 @@ p {
 
 .section-3 {
   width: 100%;
-  height: 100%;
   background-color: var(--black-color);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -659,7 +658,6 @@ canvas {
   width: 100%;
   height: 100%;
   padding-bottom: 62px;
-  height: 100vh;
 }
 
 #about .wrapper {
@@ -924,15 +922,7 @@ canvas {
   background: #040404;
 }
 
-#skills .short-info {
-  background: #1d1d1d;
-  position: absolute;
-  left: -18px;
-}
-
 #skills .short-info ul {
-  position: relative;
-  left: 33px;
   padding-bottom: 10px;
   font-family: "La Belle Aurore", cursive;
 }
@@ -960,7 +950,7 @@ canvas {
   color: #1968c0;
   font-size: 28.8px;
   position: absolute;
-  margin-left: 3rem;
+  margin-left: 7rem;
 }
 
 #skills .short-info p {
@@ -976,17 +966,17 @@ canvas {
   content: "</p>";
   font-family: "La Belle Aurore", cursive;
   color: #1968c0;
-  font-size: 1.8rem;
+  font-size: 28.8px;
   position: absolute;
   margin-top: 40%;
-  margin-left: -57px;
+  margin-left: -69px;
 }
 
 #skills .short-info p::after {
   content: "";
   border-left: 1px solid #4a4747;
   top: 24%;
-  height: 58%;
+  height: 56%;
   left: 12%;
   position: absolute;
   -webkit-transition: all 0.35s ease-in-out;
@@ -1060,11 +1050,11 @@ canvas {
 }
 
 @media (max-width: 550px) {
+  .section-3 {
+    padding: 63px 0;
+  }
   .section-3-heading {
     font-size: 8rem;
-  }
-  .macbook-info-heading {
-    font-size: 5rem;
   }
   .macbook-btn {
     width: 15rem;
@@ -1083,18 +1073,25 @@ canvas {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  .section-3-heading {
-    font-size: 6rem;
-  }
   .macbook-info {
-    width: 40rem;
+    left: 28%;
   }
-  .macbook-info-heading {
-    font-size: 3rem;
+  .macbook-info .contact {
+    font-size: 16px;
   }
-  .macbook-price {
-    font-size: 2rem;
-    font-weight: 300;
+  .macbook-info input {
+    height: 19px;
+    border-radius: 25px;
+    padding: 0 21px 0 5px;
+  }
+  .macbook-info textarea {
+    min-height: 27px;
+    padding: 7px 7px;
+  }
+  .macbook-info button {
+    height: 27px;
+    border-radius: 25px;
+    font-size: 12px;
   }
 }
 
@@ -1131,7 +1128,101 @@ canvas {
   html {
     font-size: 30%;
   }
+  canvas {
+    height: 1067px;
+    width: 100%;
+  }
+  .ag-thunders {
+    top: 70px;
+    left: -132%;
+  }
+  #about {
+    left: 3px;
+  }
+  #about .wrapper {
+    padding: 55px 57px;
+  }
+  #about .wrapper .tags {
+    top: 5px;
+    left: 4rem;
+    font-size: 28.8px;
+  }
+  #about .wrapper .tags::after {
+    font-size: 28.8px;
+    margin-left: 2rem;
+    margin-top: -6px;
+  }
+  #about .wrapper .static-txt {
+    font-size: 23px;
+    margin-top: 43px;
+  }
+  #about .wrapper .static-txt::before {
+    font-size: 18px;
+    margin-top: -17px;
+    left: 52px;
+  }
+  #about .wrapper .static-txt::after {
+    font-size: 17px;
+    top: 33%;
+    left: 61px;
+  }
+  #about .wrapper .dinamic-txts {
+    margin-left: 15px;
+    padding-top: 42px;
+  }
+  #about .wrapper .dinamic-txts::before {
+    font-size: 18px;
+    margin-top: 30px;
+    right: 36px;
+  }
+  #about .wrapper .dinamic-txts li {
+    font-size: 23px;
+  }
+  #about .player-container {
+    margin-left: 43px;
+  }
+  #skills .short-info ul {
+    padding-bottom: 10px;
+  }
+  #skills .short-info ul li {
+    padding-top: 30px;
+    font-size: 26px;
+  }
+  #skills .short-info .tags::after {
+    margin-left: 5rem;
+  }
+  #skills .short-info p {
+    padding-right: 0;
+  }
+  #skills .short-info p::before {
+    margin-top: 82%;
+    margin-left: -64px;
+  }
+  #skills .short-info p::after {
+    top: 21%;
+    height: 62%;
+    left: 8%;
+  }
+  #skills #holder {
+    padding-left: 0;
+  }
+  #skills #holder svg {
+    width: 100%;
+  }
+  #skills #holder2 {
+    padding-left: 0;
+  }
+  #skills #holder2 svg {
+    width: 100%;
+  }
+  #pricing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pricing .section-heading-line {
+    display: none;
+  }
 }
-
-/* End of Responsive */
 /*# sourceMappingURL=style.css.map */

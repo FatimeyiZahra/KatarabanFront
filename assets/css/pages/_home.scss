@@ -24,7 +24,7 @@ canvas {
     width: 100%;
     height: 100%;
     padding-bottom: 62px;
-    height: 100vh;
+    // height: 100vh;
     .wrapper {
         display: inline-flex;
         background: $backgroundDark;
@@ -257,13 +257,13 @@ canvas {
     // filter: brightness(80%);
 
     .short-info {
-        background: $backgroundDark;
-        position: absolute;
-        left: -18px;
+        // background: $backgroundDark;
+        // position: absolute;
+        // left: -18px;
         // filter: brightness(80%);
         ul {
-            position: relative;
-            left: 33px;
+            // position: relative;
+            // left: 33px;
             padding-bottom: 10px;
             font-family: $laBelleFont;
             li {
@@ -290,7 +290,7 @@ canvas {
                 color: #1968c0;
                 font-size: 28.8px;
                 position: absolute;
-                margin-left: 3rem;
+                margin-left: 7rem;
             }
         }
         p {
@@ -304,16 +304,16 @@ canvas {
                 content: "</p>";
                 font-family: $laBelleFont;
                 color: $tagColor;
-                font-size: 1.8rem;
+                font-size: 28.8px;
                 position: absolute;
                 margin-top: 40%;
-                margin-left: -57px;
+                margin-left: -69px;
             }
             &::after {
                 content: "";
                 border-left: 1px solid #4a4747;
                 top: 24%;
-                height: 58%;
+                height: 56%;
                 left: 12%;
                 position: absolute;
                 -webkit-transition: all 0.35s ease-in-out;
