@@ -11,76 +11,45 @@
   }
 }
 
-@media (max-width: 900px) {
-  .section-3-content {
-    width: 90%;
-  }
 
-  .loading-wrapper {
-    width: 70%;
-  }
+// @media (max-width: 550px) {
+//   .section-3{
+//     padding: 63px 0;
+//   }
+// }
 
-  .loading i {
-    font-size: 6rem;
-  }
-}
+// @media (max-width: 450px) {
+//   html {
+//     font-size: 35%;
+//   }
 
-@media (max-width: 700px) {
-  .logo {
-    top: 0;
-    left: 2rem;
-  }
+//   .logo {
+//     top: 10rem;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
 
-  .logo i {
-    font-size: 8rem;
-  }
-}
+//   .macbook-info {
+//     left: 28%;
+//     .contact {
+//       font-size: 13px;
+//       padding-bottom: 5px;
+//     }
+//     input {
+//       height: 19px;
+//       border-radius: 25px;
+//       padding: 0 21px 0 5px;
+//     }
+//     textarea{
+//       min-height: 27px;
+//       padding: 3px 7px;
+//     }
+//     button {
+//       height: 21px;
+//     border-radius: 25px;
+//     font-size: 11px;
+//     }
+//   }
+// }
 
-@media (max-width: 550px) {
-  .section-3{
-    padding: 63px 0;
-  }
-  .section-3-heading {
-    font-size: 8rem;
-  }
-
-  .macbook-btn {
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 35%;
-  }
-
-  .logo {
-    top: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .macbook-info {
-    left: 28%;
-    .contact {
-      font-size: 16px;
-    }
-    input {
-      height: 19px;
-      border-radius: 25px;
-      padding: 0 21px 0 5px;
-    }
-    textarea{
-      min-height: 27px;
-      padding: 7px 7px;
-    }
-    button {
-      height: 27px;
-      border-radius: 25px;
-      font-size: 12px;
-    }
-  }
-}
 /* End of Responsive */

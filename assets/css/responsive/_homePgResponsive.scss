@@ -45,18 +45,39 @@
   // html {
   //   font-size: 40%;
   // }
+  .section-3-content {
+    width: 90%;
+  }
+
+  .loading-wrapper {
+    width: 70%;
+  }
+
+  .loading i {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 700px) {
   html {
     font-size: 35%;
   }
+  .section-3 {
+    .logo {
+      top: 0;
+      left: 2rem;
+    }
+
+    .logo i {
+      font-size: 8rem;
+    }
+  }
 }
 
 @media (max-width: 500px) {
-  html {
-    font-size: 30%;
-  }
+  // html {
+  //   font-size: 30%;
+  // }
   canvas {
     height: 1067px;
     width: 100%;
@@ -68,7 +89,7 @@
   #about {
     left: 3px;
     .wrapper {
-      padding: 55px 57px;
+      padding: 55px 80px;
       .tags {
         top: 5px;
         left: 4rem;
@@ -156,6 +177,324 @@
     .section-heading-line {
       display: none;
     }
-    
+  }
+
+  // html {
+  //   font-size: 35%;
+  // }
+
+  .logo {
+    top: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-3 {
+    padding: 63px 0;
+  }
+
+  .macbook-info {
+    left: 28%;
+    .contact {
+      font-size: 13px;
+      padding-bottom: 5px;
+    }
+    input {
+      height: 19px;
+      border-radius: 25px;
+      padding: 0 21px 0 5px;
+    }
+    textarea {
+      min-height: 27px;
+      padding: 3px 7px;
+    }
+    button {
+      height: 21px;
+      border-radius: 25px;
+      font-size: 11px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  canvas {
+    height: 1069px;
+  }
+  #about {
+    .wrapper {
+      .static-txt {
+        margin-top: 44px;
+        font-size: 19px;
+      }
+      .dinamic-txts {
+        padding-top: 44px;
+        &::before {
+          right: 60px;
+          margin-top: 26px;
+        }
+        li {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  #skills {
+    .f-s-43 {
+      font-size: 42px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  // html {
+  //   font-size: 30%;
+  // }
+  canvas {
+    height: 1067px;
+    width: 100%;
+  }
+  .ag-thunders {
+    top: 70px;
+    left: -132%;
+  }
+  #about {
+    left: 3px;
+    .wrapper {
+      padding: 55px 57px;
+      .tags {
+        top: 5px;
+        left: 4rem;
+        font-size: 28.8px;
+        &::after {
+          font-size: 28.8px;
+          margin-left: 2rem;
+          margin-top: -6px;
+        }
+      }
+      .static-txt {
+        font-size: 18px;
+        margin-top: 43px;
+        &::before {
+          font-size: 18px;
+          margin-top: -17px;
+          left: 52px;
+        }
+        &::after {
+          font-size: 17px;
+          top: 33%;
+          left: 61px;
+        }
+      }
+      .dinamic-txts {
+        margin-left: 15px;
+        padding-top: 42px;
+        &::before {
+          font-size: 18px;
+          margin-top: 30px;
+          right: 36px;
+        }
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+    .player-container {
+      margin-left: 22px;
+    }
+  }
+
+  #skills {
+    .short-info {
+      ul {
+        padding-bottom: 10px;
+        li {
+          padding-top: 30px;
+          font-size: 24px;
+          span {
+            &.f-s-43 {
+              font-size: 36px;
+            }
+          }
+        }
+      }
+      .tags {
+        &::after {
+          margin-left: 5rem;
+        }
+      }
+      p {
+        padding-right: 0;
+        &::before {
+          margin-top: 109%;
+          margin-left: -64px;
+        }
+        &::after {
+          top: 19%;
+          height: 66%;
+          left: 8%;
+        }
+      }
+    }
+    #holder {
+      padding-left: 0;
+      svg {
+        width: 100%;
+      }
+    }
+    #holder2 {
+      padding-left: 0;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+  #pricing {
+    flex-direction: column;
+    .section-heading-line {
+      display: none;
+    }
+  }
+  .macbook-info {
+    left: 28%;
+    .contact {
+      font-size: 13px;
+      padding-bottom: 5px;
+    }
+    input {
+      height: 19px;
+      border-radius: 25px;
+      padding: 0 21px 0 5px;
+    }
+    textarea {
+      min-height: 27px;
+      padding: 3px 7px;
+    }
+    button {
+      height: 21px;
+      border-radius: 25px;
+      font-size: 11px;
+    }
+  }
+}
+@media (max-width: 300px) {
+  // html {
+  //   font-size: 30%;
+  // }
+  canvas {
+    height: 1119px;
+    width: 100%;
+  }
+  .ag-thunders {
+    top: 70px;
+    left: -132%;
+  }
+  #about {
+    left: 3px;
+    .wrapper {
+      padding: 45px 83px;
+      .tags {
+        top: 5px;
+        left: 4rem;
+        font-size: 22.8px;
+        &::after {
+          font-size: 22.8px;
+          margin-left: 2rem;
+          margin-top: -6px;
+        }
+      }
+      .static-txt {
+        font-size: 13px;
+        margin-top: 34px;
+        &::before {
+          font-size: 16px;
+          margin-top: -17px;
+          left: 52px;
+        }
+        &::after {
+          font-size: 16px;
+          top: 26%;
+          left: 33px;
+        }
+      }
+      .dinamic-txts {
+        margin-left: 15px;
+        padding-top: 34px;
+        &::before {
+          margin-top: 24px;
+          right: 41px;
+          font-size: 16px;
+        }
+        li {
+          font-size: 13px;
+        }
+      }
+    }
+    .player-container {
+      margin-left: -7px;
+      #pricing {
+        flex-direction: column;
+        .section-heading-line {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #skills {
+    .short-info {
+      ul {
+        padding-bottom: 10px;
+        li {
+          font-size: 19px;
+          span {
+            &.f-s-43 {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+      .tags {
+        &::after {
+          margin-left: 2rem;
+        }
+      }
+      p {
+        padding-right: 0;
+        &::before {
+          margin-top: 151%;
+        }
+      }
+    }
+    #holder {
+      padding-left: 0;
+      svg {
+        width: 100%;
+      }
+    }
+    #holder2 {
+      padding-left: 0;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .macbook-info {
+    left: 23%;
+    .contact {
+      font-size: 10px;
+      // padding-bottom: 5px;
+    }
+    input {
+      height: 12px;
+      border-radius: 25px;
+      padding: 0 21px 0 5px;
+    }
+    textarea {
+      min-height: 27px;
+      padding: 0 7px;
+    }
+    button {
+      height: 17px;
+      font-size: 9px;
+    }
   }
 }

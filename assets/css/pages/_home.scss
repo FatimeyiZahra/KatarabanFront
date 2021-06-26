@@ -69,7 +69,7 @@ canvas {
                 content: "<!-- <h3> Sharifova Sahara </h3> -->";
                 font-family: "La Belle Aurore", cursive;
                 color: $grayColor;
-                font-size: 1.8rem;
+                font-size: 28px;
                 position: absolute;
                 top: 36%;
                 // bottom: 48px;
@@ -95,7 +95,7 @@ canvas {
             li {
                 font-size: 60px;
                 color: #00ff00;
-                animation: slide 6s steps(4) infinite;
+                animation: slide 6s steps(1) infinite;
                 position: relative;
                 top: 0;
                 span {
@@ -312,8 +312,8 @@ canvas {
             &::after {
                 content: "";
                 border-left: 1px solid #4a4747;
-                top: 24%;
-                height: 56%;
+                top: 23%;
+                height: 51%;
                 left: 12%;
                 position: absolute;
                 -webkit-transition: all 0.35s ease-in-out;
